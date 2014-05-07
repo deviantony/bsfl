@@ -684,8 +684,7 @@ elapsed () {
     START="$1"
     STOP="$2"
 
-    ELAPSED=$(( STOP - START ))
-    msg "Seconds elapsed: $ELAPSED"
+    echo $(( STOP - START ))
 }
 
 start_watch () {
