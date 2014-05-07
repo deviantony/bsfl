@@ -266,8 +266,6 @@ msg () {
         if ! option_enabled "DONOTLOG"
         then
             log "$MESSAGE"
-        else
-            echo "DONOTLOG is $DONOTLOG"
         fi
     else
         echo "-- no message received --"
