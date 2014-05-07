@@ -216,7 +216,7 @@ log () {
 
         if has_value LOG_MESSAGE
         then
-            LOG_STRING="$DATE $STATE - $LOG_MESSAGE"
+            LOG_STRING="$DATE - $STATE - $LOG_MESSAGE"
         else
             LOG_STRING="$DATE -- empty log message, no input received --"
         fi
