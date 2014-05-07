@@ -40,7 +40,7 @@ init () {
     #
     if ! defined LOGDATEFORMAT
     then
-        LOGDATEFORMAT="%b %e %H:%M:%S"
+        LOGDATEFORMAT="%FT%T%z" 
     fi
     if ! defined LOG_FILE
     then
@@ -212,7 +212,7 @@ log () {
     then
         LOG_MESSAGE="$1" 
         STATE="$2"
-        DATE=`date +"$LOGDATEFORMAT"`
+        DATE=`date -u +"$LOGDATEFORMAT"`
 
         if has_value LOG_MESSAGE
         then
