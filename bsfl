@@ -209,14 +209,14 @@ log () {
     if option_enabled LOG_ENABLED || option_enabled SYSLOG_ENABLED 
     then
         LOG_MESSAGE="$1" 
-        STATE="$2"
+        STATUS="$2"
         DATE=`date -u +"$LOGDATEFORMAT"`
 
         if has_value LOG_MESSAGE
         then
-	    if has_value STATE
+	    if has_value STATUS
 	    then
-		LOG_STRING="$DATE - $LOG_MESSAGE - Status: $STATE"
+		LOG_STRING="$DATE - $LOG_MESSAGE - Status: $STATUS"
 	    else
 		LOG_STRING="$DATE - $LOG_MESSAGE"
 	    fi            
