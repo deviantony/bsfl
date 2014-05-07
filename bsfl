@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # ###########################
 # Bash Shell Function Library
 # ###########################
@@ -11,13 +11,11 @@
 # Copyright © 2014
 #
 # Description:
-#
 # This is a shell script library. It contains functions that can be called by
 # programs that include (source) this library. 
 #
 # By simply sourcing this library, you can use all available functions as 
 # documented on the projects page.
-#
 #
 
 BSFL_VERSION="2.00-beta-4"
